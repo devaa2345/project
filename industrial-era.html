@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Travel Explorer - Industrial Era</title>
+    <link href="https://fonts.googleapis.comcss2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="stone-age.html">Stone Age</a></li>
+            <li><a href="medieval-age.html">Medieval Age</a></li>
+            <li><a href="industrial-era.html">Industrial Era</a></li>
+            <li><a href="future-era.html">Future Era</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section class="content-section">
+            <div class="hero">
+                <h1>The Industrial Age</h1>
+                <p>Steam, Factories, Progress.</p>
+                <div>
+                    <a href="index.html" class="cta-button">Back to Home</a>
+                    <a href="future-era.html" class="cta-button">Travel Ahead to Modern Age</a>
+                </div>
+            </div>
+
+            <div class="content-image" style="background-image: url('https://assets.editorial.aetnd.com/uploads/2021/11/pollution-industrial-revolution-gettyimages-587493886.jpg')"></div>
+
+            <div class="info-section">
+                <h2>The Revolution That Changed Everything</h2>
+                <p>The Industrial Revolution, which began in Britain in the late 18th century, transformed society from agrarian to industrial through technological innovations. Steam power, mechanized manufacturing, and new transportation systems revolutionized production and daily life. This period saw massive urbanization, the growth of factories, and profound social changes that laid the groundwork for the modern world.</p>
+                
+                <table class="timeline-table">
+                    <tr>
+                        <th>Invention/Development</th>
+                        <th>Approximate Time Period</th>
+                    </tr>
+                    <tr>
+                        <td>Steam Engine (James Watt)</td>
+                        <td>1765</td>
+                    </tr>
+                    <tr>
+                        <td>Spinning Jenny</td>
+                        <td>1764</td>
+                    </tr>
+                    <tr>
+                        <td>First Railway Steam Locomotive</td>
+                        <td>1804</td>
+                    </tr>
+                    <tr>
+                        <td>Telegraph System</td>
+                        <td>1837</td>
+                    </tr>
+                    <tr>
+                        <td>Bessemer Process (Mass Steel Production)</td>
+                        <td>1856</td>
+                    </tr>
+                </table>
+
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="future-era.html" class="cta-button">Next: Future Era</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Hide loader when page is fully loaded
+        window.addEventListener('load', function() {
+            const loader = document.querySelector('.loader');
+            if (loader) {
+                setTimeout(function() {
+                    loader.classList.add('hidden');
+                }, 1000);
+            }
+        });
+    </script>
+    <script src="transition.js"></script>
+
+</body>
+</html>
