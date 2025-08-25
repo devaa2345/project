@@ -12,7 +12,23 @@ document.addEventListener("DOMContentLoaded", () => {
         body.style.opacity = 1;
     });
 
-    // Fade out on navigation
+    // Smooth scrolling for same-page anchors (#)
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            const targetId = this.getAttribute("href").substring(1);
+            const targetEl = document.getElementById(targetId);
+
+            if (targetEl) {
+                e.preventDefault();
+                targetEl.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+            }
+        });
+    });
+
+    // Fade out on navigation (for other links/pages)
     document.querySelectorAll("a, button").forEach(el => {
         el.addEventListener("click", e => {
             const href = el.getAttribute("href");
