@@ -1,0 +1,377 @@
+/* === GLOBAL STYLES === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; /* Smooth scroll effect */
+  scrollbar-width: none;   /* Hide scrollbar Firefox */
+}
+
+body {
+  background-color: #000;
+  color: #FFF;
+  line-height: 1.7;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+
+  /* Page transition */
+  opacity: 0;
+  transition: opacity 0.6s ease;
+
+  -ms-overflow-style: none; /* IE/Edge */
+}
+body.fade-in {
+  opacity: 1;
+}
+
+/* Hide scrollbar Chrome/Safari/Edge */
+::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* === VIDEO BACKGROUND === */
+.video-background {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  overflow: hidden;
+  z-index: -2;
+}
+.video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+.video-background .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7));
+  z-index: -1;
+}
+
+/* === NAVIGATION === */
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: transparent;
+  z-index: 100;
+}
+.nav-links {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+}
+.nav-links a {
+  color: #AAA;
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 0.3rem 0;
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+}
+.nav-links a:hover {
+  color: #FFF;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 0; height: 1px;
+  background-color: #FFF;
+  transition: width 0.3s ease;
+}
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* === HERO SECTION === */
+.hero {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 6rem 2rem;
+  color: #FFF;
+  z-index: 2;
+}
+.hero h1 {
+  font-size: 3.8rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #FFF, #CCC);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transform: translateY(20px);
+}
+.hero p {
+  font-size: 1.3rem;
+  color: #AAA;
+  margin: 1rem auto 2rem auto;
+  max-width: 650px;
+  line-height: 1.8;
+  font-family: 'Inter', sans-serif;
+}
+
+/* === BUTTON STYLES === */
+.cta-button {
+  display: inline-block;
+  padding: 0.9rem 2rem;
+  background: #f5f5f5;
+  color: #111;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  font-size: 1.05rem;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+.cta-button:hover {
+  background: #e9e9e9;
+  color: #000;
+  border-color: #ccc;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transform: translateY(-2px);
+}
+
+/* === ERA BOXES === */
+.era-box {
+  display: flex;
+  align-items: center;
+  margin: 5rem 0;
+  min-height: 400px;
+  position: relative;
+}
+.era-box:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.era-image {
+  flex: 1;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  transition: transform 0.5s ease;
+}
+.era-image:hover {
+  transform: scale(1.02);
+}
+.era-content {
+  flex: 1;
+  padding: 2rem;
+}
+.era-content h2 {
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  font-family: 'Playfair Display', serif;
+  color: #FFF;
+}
+.era-content p {
+  color: #AAA;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+/* === CONTENT SECTIONS === */
+.content-section { padding: 3rem 0; }
+.content-image {
+  width: 720px;
+  max-width: 100%;
+  height: 480px;
+  background-size: cover;
+  background-position: center;
+  margin: 2rem auto;
+  border-radius: 8px;
+}
+.info-section {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+.info-section h2 {
+  font-size: 2.3rem;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+  font-family: 'Playfair Display', serif;
+  color: #FFF;
+}
+.info-section p {
+  color: #AAA;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+/* === TIMELINE TABLE === */
+.timeline-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 3rem 0;
+  color: #AAA;
+}
+.timeline-table th,
+.timeline-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #333;
+}
+.timeline-table th {
+  color: #FFF;
+  font-weight: 400;
+  font-size: 1.05rem;
+  font-family: 'Playfair Display', serif;
+}
+.timeline-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* === MODERN ERA TEXT EFFECT === */
+.modern-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  background: linear-gradient(90deg, #FFF 50%, #AAA 50%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 968px) {
+  .hero h1 { font-size: 2.5rem; }
+  .era-content h2 { font-size: 2rem; }
+}
+@media (max-width: 768px) {
+  .nav-links {
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .hero {
+    height: 50vh;
+    padding: 5rem 1rem 2rem 1rem;
+  }
+  .hero h1 { font-size: 2rem; }
+  .hero p { font-size: 1rem; }
+  .era-box { flex-direction: column; margin: 3rem 0; }
+  .era-box:nth-child(even) { flex-direction: column; }
+  .era-image { width: 100%; height: 300px; margin-bottom: 1.5rem; }
+  .era-content { padding: 1rem; }
+  .content-image { width: 100%; height: 300px; }
+  .modern-text { font-size: 1rem; }
+  .cta-button { padding: 0.7rem 1.5rem; font-size: 1rem; }
+}
+
+/* === LOADER === */
+.loader {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease;
+}
+.loader::after {
+  content: "";
+  width: 50px; height: 50px;
+  border: 5px solid #333;
+  border-top-color: #FFF;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+.loader.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* === SCROLL TO TOP BUTTON === */
+#scrollToTop {
+  position: fixed;
+  bottom: 30px; right: 30px;
+  width: 45px; height: 45px;
+  background: #fff;
+  color: #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 500;
+}
+#scrollToTop.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+#scrollToTop:hover {
+  background: #e9e9e9;
+}
+.about-section {
+  position: relative;
+  padding: 6rem 2rem;
+  text-align: center;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  z-index: 1;
+}
+
+.about-section::after {
+  content: "Dev S Patel";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 6rem;
+  font-family: 'Playfair Display', serif;
+  color: rgba(255, 255, 255, 0.03); /* faint watermark */
+  white-space: nowrap;
+  z-index: 0;
+  pointer-events: none;
+}
+
