@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -81,4 +82,89 @@
     <script src="transition.js"></script>
 
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Travel Explorer - Medieval Age</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="stone-age.html">Stone Age</a></li>
+            <li><a href="medieval-age.html">Medieval Age</a></li>
+            <li><a href="industrial-era.html">Industrial Era</a></li>
+            <li><a href="future-era.html">Future Era</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section class="content-section">
+            <div class="hero">
+                <h1>The Medieval Age.</h1>
+                <p>Castles, Knights, and Kingdoms</p>
+                <a href="industrial-era.html" class="cta-button">Travel Ahead to Industrial Age</a>
+            </div>
+
+            <div class="content-image" style="background-image: url('https://knightstemplar.co/wp-content/uploads/2023/07/kings_of_the_middle_ages.jpg')"></div>
+
+            <div class="info-section">
+                <h2>Age of Chivalry and Faith</h2>
+                <p>The Medieval Age, spanning from the 5th to the late 15th century, was a period of significant social, political, and cultural transformation in Europe. This era witnessed the rise of feudalism, the power of the Catholic Church, and the development of distinct architectural styles like Romanesque and Gothic. Knights, castles, and courtly love defined the cultural landscape, while events like the Crusades connected Europe with the wider world.</p>
+                
+                <table class="timeline-table">
+                    <tr>
+                        <th>Event/Development</th>
+                        <th>Approximate Time Period</th>
+                    </tr>
+                    <tr>
+                        <td>Fall of Rome (Start of Middle Ages)</td>
+                        <td>476 AD</td>
+                    </tr>
+                    <tr>
+                        <td>Norman Conquest of England</td>
+                        <td>1066</td>
+                    </tr>
+                    <tr>
+                        <td>First Crusade</td>
+                        <td>1096-1099</td>
+                    </tr>
+                    <tr>
+                        <td>Black Death in Europe</td>
+                        <td>1347-1351</td>
+                    </tr>
+                    <tr>
+                        <td>Fall of Constantinople (End of Middle Ages)</td>
+                        <td>1453</td>
+                    </tr>
+                </table>
+
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="industrial-era.html" class="cta-button">Next: Industrial Era</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Hide loader when page is fully loaded
+        window.addEventListener('load', function() {
+            const loader = document.querySelector('.loader');
+            if (loader) {
+                setTimeout(function() {
+                    loader.classList.add('hidden');
+                }, 1000);
+            }
+        });
+    </script>
+    <script src="transition.js"></script>
+
+</body>
+>>>>>>> 82b878d0bb6dfd910a4659407994455171c24ee5
 </html>

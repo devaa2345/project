@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -77,4 +78,85 @@
     <script src="transition.js"></script>
 
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Travel Explorer - Stone Age</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="stone-age.html">Stone Age</a></li>
+            <li><a href="medieval-age.html">Medieval Age</a></li>
+            <li><a href="industrial-era.html">Industrial Era</a></li>
+            <li><a href="future-era.html">Future Era</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section class="content-section">
+            <div class="hero">
+                <h1>The Stone Age.</h1>
+                <p>Survival, Fire, and Beginnings</p>
+                <a href="medieval-age.html" class="cta-button">Travel Ahead to Medieval Age</a>
+            </div>
+
+            <div class="content-image" style="background-image: url('https://png.pngtree.com/background/20230606/original/pngtree-stone-age-men-have-been-portrayed-in-this-painting-picture-image_2877021.jpg')"></div>
+
+            <div class="info-section">
+                <h2>The Dawn of Humanity</h2>
+                <p>The Stone Age represents the earliest period of human history, characterized by the use of stone tools. This extensive period, spanning approximately 3.4 million years, saw the evolution of early humans from primitive hominids to modern Homo sapiens. During this time, humans developed fundamental skills like tool-making, hunting techniques, and social organization that would form the foundation of all human civilization to follow.</p>
+                
+                <table class="timeline-table">
+                    <tr>
+                        <th>Discovery/Innovation</th>
+                        <th>Approximate Time Period</th>
+                    </tr>
+                    <tr>
+                        <td>First Stone Tools (Oldowan)</td>
+                        <td>3.3 million years ago</td>
+                    </tr>
+                    <tr>
+                        <td>Control of Fire</td>
+                        <td>1.7 million - 400,000 years ago</td>
+                    </tr>
+                    <tr>
+                        <td>Hunting Weapons (Spears)</td>
+                        <td>500,000 years ago</td>
+                    </tr>
+                    <tr>
+                        <td>Cave Art & Symbolic Expression</td>
+                        <td>70,000 - 40,000 years ago</td>
+                    </tr>
+                </table>
+
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="medieval-age.html" class="cta-button">Next: Medieval Age</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Hide loader when page is fully loaded
+        window.addEventListener('load', function() {
+            const loader = document.querySelector('.loader');
+            if (loader) {
+                setTimeout(function() {
+                    loader.classList.add('hidden');
+                }, 1000);
+            }
+        });
+    </script>
+    <script src="transition.js"></script>
+
+</body>
+>>>>>>> 82b878d0bb6dfd910a4659407994455171c24ee5
 </html>

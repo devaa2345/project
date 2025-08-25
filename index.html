@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -94,3 +95,101 @@
   <script src="transition.js"></script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Travel Explorer - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Enable smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+  <!-- Video Background -->
+  <div class="video-background">
+    <video autoplay muted loop playsinline>
+      <source src="loop.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <!-- Gradient Overlay -->
+    <div class="overlay"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#stone-age">Stone Age</a></li>
+      <li><a href="#medieval-age">Medieval Age</a></li>
+      <li><a href="#industrial-era">Industrial Era</a></li>
+      <li><a href="#future-era">Future Era</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <h1>Choose Your Era of Exploration</h1>
+    <p>Travel through the Stone Age, Medieval Kingdoms, Industrial Era, and into the Future.</p>
+    <a href="#stone-age" class="cta-button">Start Exploring</a>
+  </section>
+
+  <!-- Era Boxes -->
+  <div class="container">
+    <div class="era-box" id="stone-age">
+      <div class="era-content">
+        <h2>Stone Age</h2>
+        <p>The dawn of humanity, where our ancestors mastered survival through primitive tools, discovered fire, and laid the foundation for human civilization. This era represents the beginning of human innovation and adaptation.</p>
+        <a href="stone-age.html" class="cta-button">Explore Stone Age</a>
+      </div>
+      <div class="era-image" style="background-image: url('https://png.pngtree.com/background/20230606/original/pngtree-stone-age-men-have-been-portrayed-in-this-painting-picture-image_2877021.jpg')"></div>
+    </div>
+
+    <div class="era-box" id="medieval-age">
+      <div class="era-image" style="background-image: url('https://knightstemplar.co/wp-content/uploads/2023/07/kings_of_the_middle_ages.jpg')"></div>
+      <div class="era-content">
+        <h2>Medieval Age</h2>
+        <p>A time of castles, knights, and kingdoms where feudal systems dominated society. This period saw the construction of magnificent cathedrals, the rise of chivalry, and the development of early nation-states in Europe.</p>
+        <a href="medieval-age.html" class="cta-button">Explore Medieval Age</a>
+      </div>
+    </div>
+
+    <div class="era-box" id="industrial-era">
+      <div class="era-content">
+        <h2>Industrial Era</h2>
+        <p>A revolution that transformed society from agrarian to industrial, introducing steam power, factories, and mass production. This era dramatically changed transportation, manufacturing, and everyday life.</p>
+        <a href="industrial-era.html" class="cta-button">Explore Industrial Era</a>
+      </div>
+      <div class="era-image" style="background-image: url('https://assets.editorial.aetnd.com/uploads/2021/11/pollution-industrial-revolution-gettyimages-587493886.jpg')"></div>
+    </div>
+
+    <div class="era-box" id="future-era">
+      <div class="era-image" style="background-image: url('https://i.etsystatic.com/20523071/r/il/d59fb1/3316691680/il_570xN.3316691680_dlf1.jpg')"></div>
+      <div class="era-content">
+        <h2>Future Era</h2>
+        <p>The modern age of artificial intelligence, space exploration, and digital connectivity. This era represents humanity's technological peak where innovation continues to reshape our world and future possibilities.</p>
+        <a href="future-era.html" class="cta-button">Explore Future Era</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Loader Script -->
+  <script>
+    window.addEventListener('load', function() {
+      const loader = document.querySelector('.loader');
+      if (loader) {
+        setTimeout(() => loader.classList.add('hidden'), 1000);
+      }
+    });
+  </script>
+  <script src="transition.js"></script>
+</body>
+</html>
+>>>>>>> 82b878d0bb6dfd910a4659407994455171c24ee5
