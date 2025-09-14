@@ -1,0 +1,114 @@
+/* Chatbot Container */
+#chatbot-container {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 380px;          /* bigger width */
+  max-height: 500px;     /* bigger height */
+  background: #111;      /* dark aesthetic background */
+  border: 1px solid #ccc;
+  box-shadow: 0 0 8px rgba(255,255,255,0.2); /* subtle glow */
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Arial', sans-serif; /* replace with your site font */
+  overflow: hidden;
+  z-index: 9999;
+}
+
+/* Header */
+#chat-header {
+  background: #1a1a1a;
+  color: #f5f5f5;
+  padding: 12px;
+  text-align: center;
+  font-weight: 600;
+  border-bottom: 1px solid #333;
+  box-shadow: none;
+}
+
+/* Chat Body */
+#chat-body {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  color: #f5f5f5;
+}
+
+.message {
+  margin: 6px 0;
+  padding: 8px 12px;
+  border-radius: 8px;
+  max-width: 80%;
+}
+
+.message.user {
+  background: #222;
+  color: #fff;
+  align-self: flex-end;
+  box-shadow: none;
+}
+
+.message.bot {
+  background: #333;
+  color: #fff;
+  align-self: flex-start;
+  box-shadow: none;
+}
+
+/* Footer */
+#chat-footer {
+  display: flex;
+  border-top: 1px solid #333;
+  background: #1a1a1a;
+}
+
+#chat-input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: #111;
+  color: #fff;
+  font-family: inherit;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+#send-btn {
+  background: #f5f5f5;
+  color: #111;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 6px;
+  margin-left: 5px;
+  transition: 0.2s;
+}
+
+#send-btn:hover {
+  background: #ddd;
+}
+
+/* Toggle Button */
+#toggle-chat {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #111;
+  color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(255,255,255,0.2);
+  z-index: 10000;
+}
+
+/* Hidden class for toggling */
+.hidden {
+  display: none !important;
+}

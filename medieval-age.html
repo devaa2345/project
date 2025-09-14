@@ -1,7 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="chatbot.css">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Time Travel Explorer - Medieval Age</title>
@@ -14,7 +15,7 @@
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="stone-age.html">Stone Age</a></li>
-            <li><a href="medieval-age.html">Medieval Age</a></li>
+            <li><a href="medieval-age.html" class="active">Medieval Age</a></li>
             <li><a href="industrial-era.html">Industrial Era</a></li>
             <li><a href="future-era.html">Future Era</a></li>
         </ul>
@@ -23,9 +24,12 @@
     <div class="container">
         <section class="content-section">
             <div class="hero">
-                <h1>The Medieval Age.</h1>
+                <h1>The Medieval Age</h1>
                 <p>Castles, Knights, and Kingdoms</p>
-                <a href="industrial-era.html" class="cta-button">Travel Ahead to Industrial Age</a>
+                <div>
+                    <a href="index.html" class="cta-button">Back to Home</a>
+                    <a href="industrial-era.html" class="cta-button">Travel Ahead to Industrial Age</a>
+                </div>
             </div>
 
             <div class="content-image" style="background-image: url('https://knightstemplar.co/wp-content/uploads/2023/07/kings_of_the_middle_ages.jpg')"></div>
@@ -49,11 +53,11 @@
                     </tr>
                     <tr>
                         <td>First Crusade</td>
-                        <td>1096-1099</td>
+                        <td>1096–1099</td>
                     </tr>
                     <tr>
                         <td>Black Death in Europe</td>
-                        <td>1347-1351</td>
+                        <td>1347–1351</td>
                     </tr>
                     <tr>
                         <td>Fall of Constantinople (End of Middle Ages)</td>
@@ -80,7 +84,9 @@
         });
     </script>
     <script src="transition.js"></script>
+    <script src="chatbot.js"></script>
+</body>
+</html>
 
 </body>
-
 </html>

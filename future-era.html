@@ -1,86 +1,65 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Time Travel Explorer - Future Era</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="chatbot.css">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Future Era - Time Travel Explorer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="stone-age.html">Stone Age</a></li>
-            <li><a href="medieval-age.html">Medieval Age</a></li>
-            <li><a href="industrial-era.html">Industrial Era</a></li>
-            <li><a href="future-era.html">Future Era</a></li>
-        </ul>
-    </nav>
+  <!-- Navigation -->
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="stone-age.html">Stone Age</a></li>
+      <li><a href="medieval-age.html">Medieval Age</a></li>
+      <li><a href="industrial-era.html">Industrial Era</a></li>
+      <li><a href="future-era.html" class="active">Future Era</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+    </ul>
+  </nav>
 
-    <div class="container">
-        <section class="content-section">
-            <div class="hero">
-                <h1>The Modern Age</h1>
-                <p>Technology, AI, and Beyond</p>
-                <a href="index.html" class="cta-button">Back to Home</a>
-            </div>
+  <div class="container">
+    <section class="content-section">
+      <div class="hero">
+        <h1>The Modern Age</h1>
+        <p>Technology, AI, and Beyond</p>
+        <a href="index.html" class="cta-button">Back to Home</a>
+      </div>
 
-            <div class="content-image" style="background-image: url('https://i.etsystatic.com/20523071/r/il/d59fb1/3316691680/il_570xN.3316691680_dlf1.jpg')"></div>
+      <div class="content-image" style="background-image: url('https://i.etsystatic.com/20523071/r/il/d59fb1/3316691680/il_570xN.3316691680_dlf1.jpg')"></div>
 
-            <div class="info-section">
-                <div class="modern-text">
-                    The Modern Era marks the peak of human innovation, where technology connects people across the globe. From the rise of artificial intelligence and robotics to space exploration and digital revolutions, humanity has unlocked the power of information and connectivity. This is the age of limitless possibilities, where science, creativity, and technology merge to shape our future.
-                </div>
-                
-                <table class="timeline-table">
-                    <tr>
-                        <th>Innovation/Development</th>
-                        <th>Approximate Time Period</th>
-                    </tr>
-                    <tr>
-                        <td>Personal Computer Revolution</td>
-                        <td>1970s-1980s</td>
-                    </tr>
-                    <tr>
-                        <td>World Wide Web</td>
-                        <td>1989</td>
-                    </tr>
-                    <tr>
-                        <td>Smartphone Revolution</td>
-                        <td>2007</td>
-                    </tr>
-                    <tr>
-                        <td>CRISPR Gene Editing</td>
-                        <td>2012</td>
-                    </tr>
-                    <tr>
-                        <td>AI and Machine Learning Advancements</td>
-                        <td>2010s-Present</td>
-                    </tr>
-                </table>
+      <div class="info-section">
+        <div class="modern-text">
+          The Modern Era marks the peak of human innovation, where technology connects people across the globe. From the rise of artificial intelligence and robotics to space exploration and digital revolutions, humanity has unlocked the power of information and connectivity. This is the age of limitless possibilities, where science, creativity, and technology merge to shape our future.
+        </div>
+        
+        <table class="timeline-table">
+          <tr>
+            <th>Innovation/Development</th>
+            <th>Approximate Time Period</th>
+          </tr>
+          <tr><td>Personal Computer Revolution</td><td>1970s-1980s</td></tr>
+          <tr><td>World Wide Web</td><td>1989</td></tr>
+          <tr><td>Smartphone Revolution</td><td>2007</td></tr>
+          <tr><td>CRISPR Gene Editing</td><td>2012</td></tr>
+          <tr><td>AI and Machine Learning Advancements</td><td>2010s-Present</td></tr>
+        </table>
 
-                <div style="text-align: center; margin-top: 3rem;">
-                    <a href="index.html" class="cta-button">Return to Home</a>
-                </div>
-            </div>
-        </section>
-    </div>
+        <div style="text-align: center; margin-top: 3rem;">
+          <a href="index.html" class="cta-button">Return to Home</a>
+        </div>
+      </div>
+    </section>
+  </div>
 
-    <script>
-        // Hide loader when page is fully loaded
-        window.addEventListener('load', function() {
-            const loader = document.querySelector('.loader');
-            if (loader) {
-                setTimeout(function() {
-                    loader.classList.add('hidden');
-                }, 1000);
-            }
-        });
-    </script>
-    <script src="transition.js"></script>
+  <script src="transition.js"></script>
+  <script src="chatbot.js"></script>
+</body>
+</html>
 
 </body>
 </html>

@@ -1,7 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="chatbot.css">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Time Travel Explorer - Stone Age</title>
@@ -13,7 +14,7 @@
     <nav>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="stone-age.html">Stone Age</a></li>
+            <li><a href="stone-age.html" class="active">Stone Age</a></li>
             <li><a href="medieval-age.html">Medieval Age</a></li>
             <li><a href="industrial-era.html">Industrial Era</a></li>
             <li><a href="future-era.html">Future Era</a></li>
@@ -23,9 +24,12 @@
     <div class="container">
         <section class="content-section">
             <div class="hero">
-                <h1>The Stone Age.</h1>
+                <h1>The Stone Age</h1>
                 <p>Survival, Fire, and Beginnings</p>
-                <a href="medieval-age.html" class="cta-button">Travel Ahead to Medieval Age</a>
+                <div>
+                    <a href="index.html" class="cta-button">Back to Home</a>
+                    <a href="medieval-age.html" class="cta-button">Travel Ahead to Medieval Age</a>
+                </div>
             </div>
 
             <div class="content-image" style="background-image: url('https://png.pngtree.com/background/20230606/original/pngtree-stone-age-men-have-been-portrayed-in-this-painting-picture-image_2877021.jpg')"></div>
@@ -45,7 +49,7 @@
                     </tr>
                     <tr>
                         <td>Control of Fire</td>
-                        <td>1.7 million - 400,000 years ago</td>
+                        <td>1.7 million – 400,000 years ago</td>
                     </tr>
                     <tr>
                         <td>Hunting Weapons (Spears)</td>
@@ -53,7 +57,7 @@
                     </tr>
                     <tr>
                         <td>Cave Art & Symbolic Expression</td>
-                        <td>70,000 - 40,000 years ago</td>
+                        <td>70,000 – 40,000 years ago</td>
                     </tr>
                 </table>
 
@@ -76,7 +80,9 @@
         });
     </script>
     <script src="transition.js"></script>
+    <script src="chatbot.js"></script>
+</body>
+</html>
 
 </body>
-
 </html>

@@ -3,29 +3,42 @@
 document.addEventListener("DOMContentLoaded", () => {
     const body = document.body;
 
-    // Start with hidden state
-    body.style.opacity = 0;
-    body.style.transition = "opacity 0.6s ease";
+    // Ensure body starts hidden until fade-in
+    body.classList.remove("fade-in");
 
-    // Fade in when page loads
+    // When page is ready, fade in
     requestAnimationFrame(() => {
-        body.style.opacity = 1;
+        body.classList.add("fade-in");
     });
 
-    // Fade out on navigation
-    document.querySelectorAll("a, button").forEach(el => {
+    // Handle page fade-out on navigation
+    document.querySelectorAll("a[href], button[href]").forEach(el => {
         el.addEventListener("click", e => {
             const href = el.getAttribute("href");
 
-            // Only fade out for real links (not # or javascript:void)
+            // Only trigger for real links (not # or JS void)
             if (href && !href.startsWith("#") && !href.startsWith("javascript")) {
                 e.preventDefault();
-                body.style.opacity = 0;
+
+                // Fade out
+                body.classList.remove("fade-in");
+
+                // Navigate after fade-out
                 setTimeout(() => {
                     window.location.href = href;
-                }, 600); // match fade-out speed
+                }, 600); // must match CSS transition time
             }
         });
     });
+});
+
+// Loader fade-out (if exists)
+window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader");
+    if (loader) {
+        setTimeout(() => {
+            loader.classList.add("hidden");
+        }, 500); // Loader fades before content
+    }
 });
 
