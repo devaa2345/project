@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="styles.css">
   <style>
     html { scroll-behavior: smooth; }
+
     .about-section {
       max-width: 900px;
       margin: 100px auto;
@@ -17,18 +18,22 @@
       text-align: center;
       color: #fff;
     }
+
     .about-section h1 {
       font-family: 'Playfair Display', serif;
       font-size: 2.5rem;
       margin-bottom: 20px;
     }
+
     .about-section p {
       font-family: 'Inter', sans-serif;
       font-size: 1.1rem;
       line-height: 1.7;
       margin-bottom: 15px;
     }
+
     .social-links { margin-top: 20px; }
+
     .social-links a {
       margin: 0 10px;
       text-decoration: none;
@@ -36,12 +41,36 @@
       font-weight: 500;
       transition: color 0.3s;
     }
+
     .social-links a:hover { color: #fff; }
+
     nav .nav-links a.active {
       color: #ffd700;
       border-bottom: 2px solid #ffd700;
       padding-bottom: 2px;
       text-shadow: 0 0 8px rgba(255, 215, 0, 0.8);
+    }
+
+    /* Optional Learn More link styling */
+    .learn-more {
+      display: inline-block;
+      margin-top: 1.5rem;
+      font-size: 14px;
+      color: #fff;
+      text-decoration: underline;
+      transition: 0.2s;
+    }
+
+    .learn-more:hover { color: #ffd700; }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .about-section {
+        margin: 60px 20px;
+        padding: 30px;
+      }
+      .about-section h1 { font-size: 2rem; }
+      .about-section p { font-size: 1rem; }
     }
   </style>
 </head>
@@ -79,6 +108,11 @@
     <div class="social-links">
       <a href="https://github.com/devaa2345" target="_blank">GitHub</a> |
       <a href="https://instagram.com/i.am.devpatel" target="_blank">Instagram</a>
+    </div>
+
+    <!-- Optional Learn More About Me -->
+    <div>
+      <a href="https://en.wikipedia.org/wiki/Software_developer" target="_blank" class="learn-more">Learn more about developers</a>
     </div>
   </section>
 

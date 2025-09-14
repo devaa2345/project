@@ -1,14 +1,24 @@
-<!DOCTYPE html>
+\<!DOCTYPE html>
 <html lang="en">
 <head>
     <link rel="stylesheet" href="chatbot.css">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Time Travel Explorer - Industrial Era</title>
-    <!-- Fixed Google Fonts link (missing ?) -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+      /* Optional Learn More link styling */
+      .learn-more {
+          display: inline-block;
+          margin-bottom: 1rem;
+          font-size: 14px;
+          color: #fff;
+          text-decoration: underline;
+          transition: 0.2s;
+      }
+      .learn-more:hover { color: #ffd700; }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -66,13 +76,15 @@
                     </tr>
                 </table>
 
-                <div style="text-align: center; margin-top: 3rem;">
-                     <!-- Learn More link -->
-                      <div>
-    <a href="https://en.wikipedia.org/wiki/Timeline_of_the_far_future" target="_blank" class="learn-more">Learn more about</a>
+                <div style="text-align: center; margin-top: 2rem;">
+                    <!-- Learn More link above Next button -->
+                    <div>
+  <a href="https://en.wikipedia.org/wiki/Industrial_Revolution" target="_blank" class="learn-more">Learn more</a>
 </div>
-                 <div>   <a href="future-era.html" class="cta-button">Next: Future Era</a>
-                </div></div>
+
+                        <a href="future-era.html" class="cta-button">Next: Future Era</a>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
@@ -90,9 +102,5 @@
     </script>
     <script src="transition.js"></script>
     <script src="chatbot.js"></script>
-</body>
-</html>
-
-
 </body>
 </html>

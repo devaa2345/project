@@ -2,12 +2,22 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="chatbot.css">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Time Travel Explorer - Stone Age</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+      .learn-more {
+          display: inline-block;
+          margin-bottom: 1rem;
+          font-size: 14px;
+          color: #fff;
+          text-decoration: underline;
+          transition: 0.2s;
+      }
+      .learn-more:hover { color: #ffd700; }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -62,21 +72,18 @@
                 </table>
 
                 <div style="text-align: center; margin-top: 3rem;">
-    <!-- Learn More link -->
-     <div>
-    <a href="https://en.wikipedia.org/wiki/Stone_Age" target="_blank" class="learn-more">Learn more</a>
-</div>
-    <!-- Next Era button -->
-     <div>
-    <a href="medieval-age.html" class="cta-button">Next: Medieval Age</a>
-    </div>
-</div>
+                    <!-- Learn More link -->
+                    <a href="https://en.wikipedia.org/wiki/Stone_Age" target="_blank" class="learn-more">Learn more about the Stone Age</a>
+                    <!-- Next Era button -->
+                    <div>
+                        <a href="medieval-age.html" class="cta-button">Next: Medieval Age</a>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
 
     <script>
-        // Hide loader when page is fully loaded
         window.addEventListener('load', function() {
             const loader = document.querySelector('.loader');
             if (loader) {
@@ -88,8 +95,5 @@
     </script>
     <script src="transition.js"></script>
     <script src="chatbot.js"></script>
-</body>
-</html>
-
 </body>
 </html>
