@@ -362,3 +362,15 @@ nav {
   z-index: 0;
   pointer-events: none;
 }
+.learn-more {
+  display: inline-block;
+  margin: 10px 0;
+  font-size: 14px;
+  color: #fff;          /* white text */
+  text-decoration: underline;
+  transition: 0.2s;
+}
+
+.learn-more:hover {
+  color: #ffd700;       /* gold on hover */
+}
